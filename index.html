@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title></title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <script src="app.js"> </script>
+        <style>
+.container{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+            .bg {
+  /* The image used */
+  background-image: url("https://cdn4.vectorstock.com/i/1000x1000/24/13/brick-wall-room-background-neon-light-vector-27852413.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} 
+            .inputtext{
+
+font-weight: bold;
+
+}
+
+.btn:hover{
+ background-color: white;
+ color: gray;
+}
+.btn{
+    font-weight: bold;
+    color: white;
+    border-color: gray;
+}
+        </style>
+    </head>
+    <body>
+        <div class="bg">
+     <div class="container  text-center"   >
+        <div class=" col-md-6  border mx-auto">
+            <row><h1 class="text-primary">Calculator</h1></row>
+            <row> <input type="text" class="form-control text-right result text-secondary"  value="0" name="result" id="result" disabled></row>
+            <row><button type="button"  class="btn btn-outline-primary my-1 mx-4 px-5 " value="c" onclick="clr()">C</button>
+                <button type="button" class="btn btn-outline-primary my-1 mx-2 px-5" value="%" onclick="dis('%')">%</button>  </button>
+                <button type="button" class="btn btn-outline-primary my-1 mx-4 px-5" onclick="clrstr()">x</button> </row>
+            <row><button type="button" class="btn btn-outline-primary my-1 px-5" value="7" onclick="dis('7')">7</button>
+                <button type="button" class="btn btn-outline-primary my-1 px-5"  value="8" onclick="dis('8')">8</button>
+                <button type="button" class="btn btn-outline-primary my-1 px-5"  value="9" onclick="dis('9')">9</button>
+                <button type="button" class="btn btn-outline-primary my-1 px-5"  value="*" onclick="dis('*')">*</button></row>
+                <row><button type="button" class="btn btn-outline-primary my-1 px-5" value="4" onclick="dis('4')">4</button>
+                    <button type="button" class="btn btn-outline-primary my-1 px-5" value="5" onclick="dis('5')">5</button>
+                    <button type="button" class="btn btn-outline-primary my-1 px-5" value="6" onclick="dis('6')">6</button>
+                    <button type="button" class="btn btn-outline-primary my-1 px-5" value="-" onclick="dis('-')" >-</button></row>
+                    <row><button type="button" class="btn btn-outline-primary my-1 px-5" value="1" onclick="dis('1')">1</button>
+                        <button type="button" class="btn btn-outline-primary my-1 px-5" value="2" onclick="dis('2')">2</button>
+                        <button type="button" class="btn btn-outline-primary my-1 px-5" value="3" onclick="dis('3')">3</button>
+                        <button type="button" class="btn btn-outline-primary my-1 px-5"  value="+" onclick="dis('+')">+</button></row>
+                        <row><button type="button" class="btn btn-outline-primary my-1 px-5"  value="0" onclick="dis('0')">0</button>
+                            <button type="button" class="btn btn-outline-primary my-1 px-5"  value="." onclick="dis('.')">.</button>
+                            <button type="button" class="btn btn-outline-primary my-1 px-5" value="=" onclick="solve()">=</button>
+                            <button type="button" class="btn btn-outline-primary my-1 px-5" value="/" onclick="dis('/')" >/</button></row>
+     </div>
+
+     </div>
+    </div>
+    </body>
+</html>
